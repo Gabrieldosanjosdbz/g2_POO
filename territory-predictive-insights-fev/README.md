@@ -24,18 +24,30 @@ O sistema lê sensores (simulados) de chuva, nível de córrego e umidade do sol
 
 **Pré-requisito:** Java 17 ou superior. Não precisa instalar banco (H2 vem como dependência) nem Maven (o projeto traz o wrapper `mvnw`).
 
+Primeiro, entre na pasta do projeto:
+
+```bash
+git clone https://github.com/Gabrieldosanjosdbz/g2_POO.git
+cd g2_POO/territory-predictive-insights-fev
+```
+
+Depois rode o sistema:
+
 ```bash
 # Linux / Mac / Git Bash
 ./mvnw compile exec:java
 
-# Windows (cmd / PowerShell)
+# Windows (cmd)
 mvnw.cmd compile exec:java
+
+# Windows (PowerShell)
+.\mvnw.cmd compile exec:java
 ```
 
 Rodar os testes:
 
 ```bash
-./mvnw test          # Windows: mvnw.cmd test
+./mvnw test          # Windows: mvnw.cmd test  (PowerShell: .\mvnw.cmd test)
 ```
 
 Se tiver Maven instalado, pode trocar `./mvnw` por `mvn`. Também roda direto pela IDE (classe `SistemaMonitoramento`, pacote padrão).
